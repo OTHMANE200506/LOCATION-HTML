@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nos Articles</title>
+    <style>
+        body {
+            background: linear-gradient(to right, blue, black);
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+        .articles-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .article {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 10px;
+            width: 300px;
+            text-align: center;
+        }
+        .catalogue {
+            display: flex;
+            gap: 5px;
+            overflow-x: auto; /* يسمح بالتمرير الأفقي إذا لم يكن هناك مساحة كافية */
+            padding-bottom: 10px;
+        }
+        .catalogue img {
+            width: 400px;
+            height: 300px;
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+        .catalogue img:hover {
+            transform: scale(1.1);
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px;
+            background: #ff9800;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .btn:hover {
+            background: #e68900;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: flex-end;
+        }
+        nav ul li {
+            margin-right: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+        .animated-title {
+            font-size: 2.5em;
+            margin-top: 20px;
+            animation: slide 1s infinite alternate;
+        }
+        @keyframes slide {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(20px); }
+        }
+    </style>
+</head>
+<body>
+
+    <h1 class="animated-title">Nos Articles</h1>
+    <nav>
+        <ul style="font-size: 20px;">
+            <li><a href="prj.html">Accueil</a></li>
+            <li><a href="srvice prj.html">Nos Services</a></li>
+            <li><a href="NOS ARTICLES.html">Nos Articles</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="articles-container">
+
+        <div class="article">
+            <div class="catalogue">
+                <img src="LA MER.png" alt="Appartement 1 - Vue 1">
+                <img src="LA MER 2.png" alt="Appartement 1 - Vue 2">
+                <img src="LA MER 3.png" alt="Appartement 1 - Vue 3">
+            </div>
+            <p>Superbe appartement avec vue sur mer</p>
+            <p>Prix: 1200€/mois</p>
+            <p>Localisation: Alger</p>
+            <a href="contact.html" class="btn">Commander</a>
+        </div>
+
+        <div class="article">
+            <div class="catalogue">
+                <img src="CENTRE VILLE 1.png" alt="Appartement 2 - Vue 1">
+                <img src="CENTRE VILLE 2.png" alt="Appartement 2 - Vue 2">
+                <img src="CENTRE VILLE 3.png" alt="Appartement 2 - Vue 3">
+            </div>
+            <p>Appartement moderne en centre-ville</p>
+            <p>Prix: 1000€/mois</p>
+            <p>Localisation: Oran</p>
+            <a href="contact.html" class="btn">Commander</a>
+        </div>
+
+        <div class="article">
+            <div class="catalogue">
+                <img src="STUDIO.png" alt="Appartement 3 - Vue 1">
+                <img src="STUDIO2.png" alt="Appartement 3 - Vue 2">
+                <img src="STUDIO 3.png" alt="Appartement 3 - Vue 3">
+            </div>
+            <p>Charmant studio proche des commerces</p>
+            <p>Prix: 800€/mois</p>
+            <p>Localisation: Constantine</p>
+            <a href="contact.html" class="btn">Commander</a>
+        </div>
+        
+        <div class="article">
+            <div class="catalogue">
+                <img src="A CENTRE VILLE.png" alt="Appartement 2 - Vue 1">
+                <img src="A CENTRE VILLE 2.png" alt="Appartement 2 - Vue 2">
+                <img src="A CENTRE VILLE 3.png" alt="Appartement 2 - Vue 3">
+            </div>
+            <p>Appartement moderne en centre-ville</p>
+            <p>Prix: 1000€/mois</p>
+            <p>Localisation: Oran</p>
+            <a href="contact.html" class="btn">Commander</a>
+        </div>
+        
+        <div class="article">
+            <div class="catalogue">
+                <img src="appart2_1.jpg" alt="Appartement 2 - Vue 1">
+                <img src="appart2_2.jpg" alt="Appartement 2 - Vue 2">
+                <img src="appart2_3.jpg" alt="Appartement 2 - Vue 3">
+            </div>
+            <p>Appartement moderne en centre-ville</p>
+            <p>Prix: 1000€/mois</p>
+            <p>Localisation: Oran</p>
+            <a href="contact.html" class="btn">Commander</a>
+        </div>
+        
+        <div class="article">
+            <div class="catalogue">
+                <img src="appart2_1.jpg" alt="Appartement 2 - Vue 1">
+                <img src="appart2_2.jpg" alt="Appartement 2 - Vue 2">
+                <img src="appart2_3.jpg" alt="Appartement 2 - Vue 3">
+            </div>
+            <p>Appartement moderne en centre-ville</p>
+            <p>Prix: 1000€/mois</p>
+            <p>Localisation: Oran</p>
+            <a href="contact.html" class="btn">Commander</a>
+        </div>
+        
+        <div class="article">
+            <div class="catalogue">
+                <img src="appart2_1.jpg" alt="Appartement 2 - Vue 1">
+                <img src="appart2_2.jpg" alt="Appartement 2 - Vue 2">
+                <img src="appart2_3.jpg" alt="Appartement 2 - Vue 3">
+            </div>
+            <p>Appartement moderne en centre-ville</p>
+            <p>Prix: 1000€/mois</p>
+            <p>Localisation: Oran</p>
+            <a href="contact.html" class="btn">Commander</a>
+        </div>
+        
+        <div class="article">
+            <div class="catalogue">
+                <img src="appart2_1.jpg" alt="Appartement 2 - Vue 1">
+                <img src="appart2_2.jpg" alt="Appartement 2 - Vue 2">
+                <img src="appart2_3.jpg" alt="Appartement 2 - Vue 3">
+            </div>
+            <p>Appartement moderne en centre-ville</p>
+            <p>Prix: 1000€/mois</p>
+            <p>Localisation: Oran</p>
+            <a href="contact.html" class="btn">Commander</a>
+        </div>
+        
+        <div class="article">
+            <div class="catalogue">
+                <img src="appart2_1.jpg" alt="Appartement 2 - Vue 1">
+                <img src="appart2_2.jpg" alt="Appartement 2 - Vue 2">
+                <img src="appart2_3.jpg" alt="Appartement 2 - Vue 3">
+            </div>
+            <p>Appartement moderne en centre-ville</p>
+            <p>Prix: 1000€/mois</p>
+            <p>Localisation: Oran</p>
+            <a href="contact.html" class="btn">Commander</a>
+        </div>
+
+    </div>
+    <footer style="text-align: center; padding: 10px; background-color: #000; color: #fff;">
+        <p>&copy; 2025 Othmane Malkoun. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
+

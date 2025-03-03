@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location des Appartements</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background: linear-gradient(to right, blue, black);
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            font-style: italic;
+        }
+        .images img {
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+            margin: 10px;
+            width: 280px;
+            height: 300PX;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: flex-end;
+        }
+        nav ul li {
+            margin-right: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        
+        }
+        .about-us {
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px;
+}
+
+.about-us h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #007bff; /* Accent color */
+}
+
+.about-us p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.about-us strong {
+    font-weight: bold;
+}
+@keyframes va-et-vient {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(20px); /* Déplace la phrase à droite */
+    }
+    100% {
+        transform: translateX(0); /* Ramène la phrase à sa position initiale */
+    }
+}
+
+.animated-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #007bff; /* Accent color */
+    animation: va-et-vient 1s ease-in-out infinite; /* Application de l'animation */
+}
+.zoom-image {
+    width: 100%; /* ou la taille souhaitée */
+    height: auto;
+    transition: transform 0.3s ease-in-out; /* Transition douce lors du zoom */
+}
+
+.zoom-image:hover {
+    transform: scale(1.1); /* Zoom à 10% lors du survol */
+}
+
+
+
+    </style>
+</head>
+<body>
+    <script>alert("BIENVENU SUR VOS SITE DE LOCATION")
+      
+    </script>
+    <header>
+        
+        <h1 style="color: #f4f4f4;font-size: 50px;" class="animated-title"><center>Location Des Appartement</center></h2>
+
+        <nav>
+            <ul style="font-size: 20px;">
+                <li><a href="prj.html">Accueil</a></li>
+                <li><a href="srvice prj.html">Nos Services</a></li>
+                <li><a href="NOS ARTICLES.html">Nos Articles</a></li>
+                <li><a href="contacte jdab.html">Contact</a></li>
+            </ul>
+            
+        </nav>
+    </header>
+    <div class="images">
+        <img src="LO.png" alt="Projet 1" class="zoom-image">
+        <img src="lo2.png" alt="Projet 2"class="zoom-image">
+        <img src="LO3.png" alt="Projet 3"class="zoom-image">
+        <img src="LO4.png" alt="Projet 4"class="zoom-image">
+    </div>
+    <section id="accueil">
+        <section class="about-us">
+            <h2>À propos de nous</h2>
+            <p>Bienvenue sur notre site de location d'appartements !</p>
+            <p>Je m'appelle <strong>Othmane Malkoun</strong>, et je suis passionné par l'immobilier et l'aide à ceux qui cherchent un endroit agréable et confortable où vivre. Sur notre site, nous vous proposons une large sélection d'appartements de qualité, soigneusement choisis pour répondre à vos besoins.</p>
+            <p>Notre objectif est de vous offrir un service personnalisé et de vous accompagner tout au long de votre recherche, en vous garantissant transparence, fiabilité et efficacité.</p>
+            <p>Que vous soyez à la recherche d'un appartement moderne en ville ou d'un espace plus calme en périphérie, nous avons ce qu'il vous faut. Parcourez notre site et découvrez nos offres !</p>
+        </section>
+        
+        <div class="images">
+            <img src="je_veux_des_photos_pour_un_projet_de_location 1 (4).png" alt="Projet 1" class="zoom-image">
+            <img src="je_veux_des_photos_pour_un_projet_de_location 1 (1).png" alt="Projet 2"class="zoom-image">
+            <img src="je_veux_des_photos_pour_un_projet_de_location 1 (3).png" alt="Projet 3"class="zoom-image">
+            <img src="je_veux_des_photos_pour_un_projet_de_location 1 (2).png" alt="Projet 4"class="zoom-image">
+        </div>
+    </section>
+    
+    <footer style="text-align: center; padding: 10px; background-color: #000; color: #fff;">
+        <p>&copy; 2025 Othmane Malkoun. Tous droits réservés.</p>
+    </footer>
+    
+</body>
+</html>

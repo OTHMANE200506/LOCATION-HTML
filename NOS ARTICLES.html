@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nos Articles</title>
+    <style>
+        body {
+            background: linear-gradient(to right, blue, black);
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+        .articles-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .article {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 10px;
+            width: 300px;
+            text-align: center;
+        }
+        .catalogue {
+            display: flex;
+            gap: 5px;
+            overflow-x: auto; /* يسمح بالتمرير الأفقي إذا لم يكن هناك مساحة كافية */
+            padding-bottom: 10px;
+        }
+        .catalogue img {
+            width: 300px;
+            height: 400px;
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+        .catalogue img:hover {
+            transform: scale(1.1);
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px;
+            background: #ff9800;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .btn:hover {
+            background: #e68900;
+        }
+        @keyframes va-et-vient {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(20px); /* Déplace la phrase à droite */
+    }
+    100% {
+        transform: translateX(0); /* Ramène la phrase à sa position initiale */
+    }
+}
+
+        .animated-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #007bff; /* Accent color */
+    animation: va-et-vient 1s ease-in-out infinite; /* Application de l'animation */
+}
+nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: flex-end;
+        }
+        nav ul li {
+            margin-right: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        
+        }
+    </style>
+</head>
+<body>
+
+    <h2 style="color: #f4f4f4;font-size: 50px;" class="animated-title"><center>NOS ARTICLES</center></h2>
+    <nav>
+        <ul style="font-size: 20px;">
+            <li><a href="prj.html">Accueil</a></li>
+            <li><a href="srvice prj.html">Nos Services</a></li>
+            <li><a href="NOS ARTICLES.html">Nos Articles</a></li>
+            <li><a href="contacte jdab.html">Contact</a></li>
+        </ul>
+        
+    </nav>
+    <div class="articles-container">
+
+        <div class="article">
+            <div class="catalogue">
+                <img src="LA MER 2.png" alt="Appartement 1 - Vue 1">
+                <img src="LA MER.png" alt="Appartement 1 - Vue 2">
+                <img src="LA MER 3.png" alt="Appartement 1 - Vue 3">
+            </div>
+            <p>Superbe appartement avec vue sur mer</p>
+            <p>Prix: 1200€/mois</p>
+            <p>Localisation: TANGER</p>
+            <a href="https://www.paypal.com/fr/home" class="btn">Commander</a>
+        </div>
+
+        <div class="article">
+            <div class="catalogue">
+                <img src="CENTRE VILLE 1.png" alt="Appartement 2 - Vue 1">
+                <img src="CENTRE VILLE 2.png" alt="Appartement 2 - Vue 2">
+                <img src="CENTRE VILLE 3.png" alt="Appartement 2 - Vue 3">
+            </div>
+            <p>Appartement moderne en centre-ville</p>
+            <p>Prix: 1000€/mois</p>
+            <p>Localisation: RABAT</p>
+            <a href="https://www.paypal.com/fr/home" class="btn">Commander</a>
+        </div>
+
+        <div class="article">
+            <div class="catalogue">
+                <img src="charment1.png" alt="Appartement 3 - Vue 1">
+                <img src="CHARMENT2.png" alt="Appartement 3 - Vue 2">
+                <img src="CHARMENT3.png" alt="Appartement 3 - Vue 3">
+            </div>
+            <p>Charmant studio proche des commerces</p>
+            <p>Prix: 800€/mois</p>
+            <p>Localisation: CASABLANCA</p>
+            <a href="https://www.paypal.com/fr/home" class="btn">Commander</a>
+        </div>
+        <div class="article">
+            <div class="catalogue">
+                <img src="STUDIO.png" alt="Appartement 3 - Vue 1">
+                <img src="STUDIO2.png" alt="Appartement 3 - Vue 2">
+                <img src="STUDIO 3.png" alt="Appartement 3 - Vue 3">
+            </div>
+            <p>Charmant studio proche des commerces</p>
+            <p>Prix: 800€/mois</p>
+            <p>Localisation: MARRAKECH</p>
+            <a href="https://www.paypal.com/fr/home" class="btn">Commander</a>
+        </div>
+        <div class="article">
+            <div class="catalogue">
+                <img src="CHARMENT5.png" alt="Appartement 3 - Vue 1">
+                <img src="CAHRMENT4.png" alt="Appartement 3 - Vue 2">
+                <img src="CHARMENT6.png" alt="Appartement 3 - Vue 3">
+            </div>
+            <p>Charmant studio proche des commerces</p>
+            <p>Prix: 800€/mois</p>
+            <p>Localisation: CASABLANCA</p>
+            <a href="https://www.paypal.com/fr/home" class="btn">Commander</a>
+        </div>
+        <div class="article">
+            <div class="catalogue">
+                <img src="MODERNE 1.png" alt="Appartement 3 - Vue 1">
+                <img src="MODERNE 2.png" alt="Appartement 3 - Vue 2">
+                <img src="MODERNE 3.png" alt="Appartement 3 - Vue 3">
+            </div>
+            <p>Appartement moderne en centre-ville</p>
+            <p>Prix: 800€/mois</p>
+            <p>Localisation: RABAT</p>
+            <a href="https://www.paypal.com/fr/home" class="btn">Commander</a>
+        </div>
+        <div class="article">
+            <div class="catalogue">
+                <img src="MER 11.png" alt="Appartement 3 - Vue 1">
+                <img src="MER 22.png" alt="Appartement 3 - Vue 2">
+                <img src="MER 33.png" alt="Appartement 3 - Vue 3">
+            </div>
+            <p>Superbe appartement avec vue sur mer</p>
+            <p>Prix: 800€/mois</p>
+            <p>Localisation: HOUCEIMA</p>
+            <a href="https://www.paypal.com/fr/home" class="btn">Commander</a>
+        </div>
+        <div class="article">
+            <div class="catalogue">
+                <img src="FORET 3.png" alt="Appartement 3 - Vue 1">
+                <img src="FORET 2.png" alt="Appartement 3 - Vue 2">
+                <img src="FORET 1.png" alt="Appartement 3 - Vue 3">
+            </div>
+            <p>Charmant studio DANS UNE FORET</p>
+            <p>Prix: 800€/mois</p>
+            <p>Localisation: BOUSKOURA</p>
+            <a href="https://www.paypal.com/fr/home" class="btn">Commander</a>
+        </div>
+        <div class="article">
+            <div class="catalogue">
+                <img src="A CENTRE VILLE 2.png" alt="Appartement 2 - Vue 1">
+                <img src="A CENTRE VILLE 3.png" alt="Appartement 2 - Vue 2">
+                <img src="A CENTRE VILLE.png" alt="Appartement 2 - Vue 3">
+            </div>
+            <p>Appartement moderne en centre-ville</p>
+            <p>Prix: 1000€/mois</p>
+            <p>Localisation: CASABLANCA</p>
+            <a href="https://www.paypal.com/fr/home" class="btn">Commander</a>
+        </div>
+
+    </div>
+    <footer style="text-align: center; padding: 10px; background-color: #000; color: #fff;">
+        <p>&copy; 2025 Othmane Malkoun. Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>
